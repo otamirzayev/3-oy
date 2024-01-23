@@ -1,0 +1,238 @@
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/jost-v15-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/jost-v15-latin-italic.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/jost-v15-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/jost-v15-latin-700.woff2") format("woff2");
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  color: #333136;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  color: #333136;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 17px 19px 17px 18px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #ffad9b;
+}
+
+/*HEADER START*/
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 67px;
+  margin-top: 64px;
+}
+.sitenav__list {
+  display: flex;
+  gap: 42px;
+}
+.sitenav-link {
+  color: #333136;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+
+/*HEADER END*/
+
+/* HERO START */
+.hero__container {
+  display: flex;
+  width: 100%;
+  background-image: none;
+  margin-bottom: 160px;
+  position: relative;
+}
+
+.hero__big-img {
+  position: absolute;
+  z-index: -1;
+  top: 320px;
+  left: -150px;
+}
+
+.hero__content {
+  width: 634px;
+  color: var(--white);
+  background-image: url("../images/about/desktop/hero-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 135px 87px 135px 95px;
+}
+
+.hero__content-title {
+  margin-bottom: 32px;
+}
+
+.hero__content-text {
+  width: 458px;
+}
+
+.hero__right-img {
+  z-index: -1;
+  border-radius: 0 15px 15px 0;
+}
+
+/* HERO END */
+
+/* FEATURES START */
+.features__container {
+  display: flex;
+  margin-bottom: 160px;
+}
+
+.features__images {
+  border-radius: 15px 0 0 15px;
+  background: #e7816b;
+}
+
+.features__content {
+  border-radius: 0 15px 15px 0;
+  padding: 154px 96px 154px 94px;
+  background-image: url("../images/about/desktop/features-img.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.features__content-title {
+  margin-bottom: 24px;
+  color: var(--primary);
+}
+
+/* FEATURES END */
+
+/* LOCATION LINKS START */
+.location {
+}
+
+.location__container {
+  margin-bottom: 160px;
+}
+
+.location__list {
+  display: flex;
+  gap: 30px;
+}
+
+.location__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.location__item-img {
+}
+
+.location__item-title {
+  margin-bottom: 32px;
+}
+
+.location__item-link {
+  border-radius: 8px;
+  background-color: var(--primary);
+  padding: 18px 18.5px 16px 18.5px;
+  color: var(--white);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.location__item-link:active {
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--secondary-primary);
+}
+
+/* LOCATION LINKS END */
+
+.bottom {
+  background-image: url("../images/about/desktop/features-bottom.png");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-bottom: 220px;
+  border-radius: 15px 0 0 15px;
+}
+
+.bottom-img {
+  border-radius: 0 15px 15px 0;
+}
